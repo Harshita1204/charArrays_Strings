@@ -2,7 +2,8 @@
 using namespace std;
 int getLength(char name[]){ // In character arrays we dont have to specify the array size 
     int count=0;
-    for(int i=0;name[i]!='\0';i++){
+    for(int i=0;name[i]!='\0';i++){ // Character arrays do not store their length
+                                    // length is calculated by counting characters until '\0'
         count++;
     }
     return count;

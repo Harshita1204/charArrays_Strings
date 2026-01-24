@@ -2,6 +2,7 @@
 using namespace std;
 // concept of a palindrome is that a reversed string should be also equal to the actual string , for example : Harsh , reversed -> hsrah , so it is not a palindrpme.  noon , reversed -> noon , this is a palindrome 
 bool checkPalindrome(char a[],int n){
+    // this function will consider uppercase and lowercase as two different characters
     int s=0;
     int e= n-1;
     while (s<=e){
